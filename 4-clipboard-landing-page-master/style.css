@@ -18,8 +18,8 @@
 }
 
 body {
-  max-width: 1400px;
   width: 100%;
+  max-width: 1400px;
   text-align: center;
 }
 
@@ -27,6 +27,7 @@ body {
 section {
   height: auto;
   padding: 6rem 0;
+  overflow-x: hidden;
 }
 h1,
 h2,
@@ -251,7 +252,10 @@ p {
 }
 /* footer section end */
 
-@media screen and (max-width: 456px) {
+@media screen and (max-width: 800px) {
+  body {
+    width: 100%;
+  }
   section {
     padding: 6rem 1.5rem;
   }
